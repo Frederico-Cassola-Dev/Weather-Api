@@ -1,0 +1,41 @@
+/* RESET STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+    --bg_main: #0a1f44;
+    --text_light: #fff;
+    --text_med: #53627c;
+    --text_dark: #1e2432;
+    --red: #ff1e42;
+    --darkred: #c3112d;
+    --orange: #ff8c00;
+    --ff-title: 'BioRhyme', serif;
+    --ff-all: 'Roboto Mono', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+header {
+    font-family: var(--ff-title);
+    font-size: 4rem;
+    text-align: center;
+}
+
+main {
+    font-family: var(--ff-all);
+    color: var(--text_light);
+    background-color: var(--bg_main);
+    text-align: center;
+}
+
+img {
+    display: block;
+    background-color: var(--text_light);
+    max-width: 100%;
+    margin: 0 auto;
+
+}

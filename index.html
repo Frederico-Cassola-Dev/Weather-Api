@@ -14,7 +14,35 @@
 </head>
 
 <body>
-    <script src="script.js"></script>
+    <header>
+        <h1>Meteo Api</h1>
+    </header>
+    <main>
+        <div class="show"></div>
+        <section class="weather-form">
+            <form action="" id="form">
+                <label for="">Chosis la Ville</label><br>
+                <input type="text" id="ville" placeholder="Ville">
+                <button type="submit">ok</button>
+
+            </form>
+        </section>
+        <section class="weather-card">
+            <h2 class="city-name"></h2>
+            <div class="icon"></div>
+            <h3 class="temp">Temperature Actuel</h3>
+            <p class="temp-value"></p>
+            <h3 class="temp-max">Temperature Maximale</h3>
+            <p class="temp-max-value"></p>
+            <h3 class="temp-min">Temperature Minimale</h3>
+            <p class="temp-min-value"></p>
+            <h3 class="temp-description">Description</h3>
+            <p class="temp-description-value"></p>
+        </section>
+
+        <script src="script.js"></script>
+    </main>
+    <footer></footer>
 </body>
 
 </html>
