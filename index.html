@@ -18,31 +18,59 @@
         <h1>Meteo Api</h1>
     </header>
     <main>
-        <div class="show"></div>
+        <!-- <div class="show"></div> -->
         <section class="weather-form">
             <form action="" id="form">
                 <label for="">Chosis la Ville</label><br>
                 <input type="text" id="ville" placeholder="Ville">
-                <button type="button" id="buttonVille">ok</button>
-
+                <button type="button" id="buttonVille">OK</button>
             </form>
         </section>
-        <section class="weather-card">
-            <h2 class="city-name"></h2>
-            <div class="icon"></div>
-            <h3 class="temp">Temperature Actuel</h3>
-            <p class="temp-value"></p>
-            <h3 class="temp-max">Temperature Maximale</h3>
-            <p class="temp-max-value"></p>
-            <h3 class="temp-min">Temperature Minimale</h3>
-            <p class="temp-min-value"></p>
-            <h3 class="temp-description">Description</h3>
-            <p class="temp-description-value"></p>
-        </section>
+        <div class="cards">
+            <section class="weather-card">
+                <h2 class="city-name"></h2>
+                <p class="date-value"></p>
+                <div class="icon"></div>
+                <h3 class="temp">Temperature</h3>
+                <p class="temp-value"></p>
+                <h3 class="temp-max">Temperature Maximale</h3>
+                <p class="temp-max-value"></p>
+                <h3 class="temp-min">Temperature Minimale</h3>
+                <p class="temp-min-value"></p>
+                <h3 class="temp-description">Description</h3>
+                <p class="temp-description-value"></p>
+            </section>
+            <section class="weather-card-second">
+                <h2 class="city-name-second"></h2>
+                <p class="date-value-second"></p>
+                <div class="icon-second"></div>
+                <h3 class="temp-second">Temperature</h3>
+                <p class="temp-value-second"></p>
+                <h3 class="temp-max-second">Temperature Maximale</h3>
+                <p class="temp-max-value-second"></p>
+                <h3 class="temp-min-second">Temperature Minimale</h3>
+                <p class="temp-min-value-second"></p>
+                <h3 class="temp-description-second">Description</h3>
+                <p class="temp-description-value-second"></p>
+            </section>
+            <section class="weather-card-third">
+                <h2 class="city-name-third"></h2>
+                <p class="date-value-third"></p>
+                <div class="icon-third"></div>
+                <h3 class="temp-third">Temperature</h3>
+                <p class="temp-value-third"></p>
+                <h3 class="temp-max-third">Temperature Maximale</h3>
+                <p class="temp-max-value-third"></p>
+                <h3 class="temp-min-third">Temperature Minimale</h3>
+                <p class="temp-min-value-third"></p>
+                <h3 class="temp-description-third">Description</h3>
+                <p class="temp-description-value-third"></p>
+            </section>
+        </div>
 
-        <script src="script.js"></script>
     </main>
     <footer></footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

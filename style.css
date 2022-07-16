@@ -21,11 +21,19 @@
 
 header {
     font-family: var(--ff-title);
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
 }
 
-main {
+.weather-form {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     font-family: var(--ff-all);
     color: var(--text_light);
     background-color: var(--bg_main);
@@ -38,4 +46,48 @@ img {
     max-width: 100%;
     margin: 0 auto;
 
+}
+
+label,
+h2,
+h3 {
+    margin: 10px auto;
+}
+
+label {
+    font-family: var(--ff-title);
+    font-size: 2rem;
+}
+
+input {
+    font-family: var(--ff-title);
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: 600;
+}
+
+#buttonVille {
+    font-family: var(--ff-title);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.date-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.date-value-second {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.date-value-third {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 10px;
 }
