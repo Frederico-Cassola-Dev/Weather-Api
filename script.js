@@ -32,8 +32,6 @@ let tempMax = "";
 let tempMin = "";
 let tempDsc = "";
 
-
-
 let iconUrl = "";
 let iconUrlSecond = "";
 let iconUrlThird = "";
@@ -64,22 +62,24 @@ function getVille2() {
 
     const generateHtml = data => {
 
-
-
         city = data.city.name;
+        // USING MAP METHOD TO ASSIGN ALL ARRAYS DATA 
         date = data.list.map(item => { return item["dt_txt"] });
         iconData = data.list.map(item => { return item["weather"][0]["icon"] })
-
         temp = data.list.map(item => { return item["main"]["temp"] });
         tempMax = data.list.map(item => { return item["main"]["temp_max"] });
         tempMin = data.list.map(item => { return item["main"]["temp_min"] });
         tempDsc = data.list.map(item => { return item["weather"][0]["description"] });
 
+        // INITIAT PRESENT DATE
+        i = 0;
         showHtml(i);
-        console.log(date)
-        console.log(temp)
-        console.log(tempDsc)
-        console.log(iconData)
+
+
+        // console.log(date)
+        // console.log(temp)
+        // console.log(tempDsc)
+        // console.log(iconData)
 
     }
 }
@@ -128,9 +128,11 @@ present.addEventListener('click', e => {
 
 })
 avancer.addEventListener('click', e => {
-    i += 3;
-    showHtml(i);
-    console.log("this is the avancer i: " + i)
+    if (i < 36) {
+        i += 3;
+        showHtml(i);
+        console.log("this is the avancer i: " + i)
+    }
 
 })
 
