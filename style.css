@@ -40,6 +40,14 @@ header {
     text-align: center;
 }
 
+.city-name {
+    font-size: 2rem;
+    font-family: var(--ff-title);
+    color: var(--text_light);
+    background-color: var(--bg_main);
+    text-align: center;
+}
+
 img {
     display: block;
     background-color: var(--text_light);
@@ -49,7 +57,6 @@ img {
 }
 
 label,
-h2,
 h3 {
     margin: 10px auto;
 }
@@ -66,11 +73,12 @@ input {
     font-weight: 600;
 }
 
-#buttonVille {
+button {
     font-family: var(--ff-title);
     font-size: 1.5rem;
     font-weight: 600;
     padding: 10px 15px;
+    margin: 10px;
     border-radius: 5px;
 }
 
